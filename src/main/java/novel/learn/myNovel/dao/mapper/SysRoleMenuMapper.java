@@ -9,7 +9,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * </p>
  *
  * @author ${author}
- * @date 2025/03/06
+ * @date 2025/03/07
  */
 public interface SysRoleMenuMapper extends BaseMapper<SysRoleMenu> {
 

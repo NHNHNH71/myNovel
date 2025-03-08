@@ -1,0 +1,36 @@
+2025-03-08 12:27:08,627 INFO (StartupInfoLogger.java:50)- Starting MyNovelApplication using Java 21.0.6 with PID 39460 (D:\Programing\idea\myNovel\target\classes started by 32770 in D:\Programing\idea\myNovel)
+2025-03-08 12:27:08,629 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v3.3.0, Spring v6.1.8
+2025-03-08 12:27:08,629 INFO (SpringApplication.java:660)- The following 1 profile is active: "dev"
+2025-03-08 12:27:08,805 INFO (DeferredLog.java:252)- Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-08 12:27:08,805 INFO (DeferredLog.java:252)- For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-08 12:27:09,465 INFO (RepositoryConfigurationDelegate.java:295)- Multiple Spring Data modules found, entering strict repository configuration mode
+2025-03-08 12:27:09,476 INFO (RepositoryConfigurationDelegate.java:143)- Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-03-08 12:27:09,505 INFO (RepositoryConfigurationDelegate.java:211)- Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+2025-03-08 12:27:10,143 INFO (TomcatWebServer.java:111)- Tomcat initialized with port 8088 (http)
+2025-03-08 12:27:10,154 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8088"]
+2025-03-08 12:27:10,156 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2025-03-08 12:27:10,156 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/10.1.24]
+2025-03-08 12:27:10,232 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2025-03-08 12:27:10,232 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1427 ms
+2025-03-08 12:27:11,881 INFO (OptionalLiveReloadServer.java:59)- LiveReload server is running on port 35729
+2025-03-08 12:27:11,912 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8088"]
+2025-03-08 12:27:11,920 INFO (TomcatWebServer.java:243)- Tomcat started on port 8088 (http) with context path '/'
+2025-03-08 12:27:11,930 INFO (StartupInfoLogger.java:56)- Started MyNovelApplication in 3.767 seconds (process running for 4.504)
+2025-03-08 12:27:20,046 INFO (DirectJDKLog.java:173)- A cookie header was received [Hm_lvt_8b02a318fde5831da10426656a43d03c=1739364151,1739534880,1739538049;] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2025-03-08 12:27:20,052 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-08 12:27:20,053 INFO (FrameworkServlet.java:532)- Initializing Servlet 'dispatcherServlet'
+2025-03-08 12:27:20,054 INFO (FrameworkServlet.java:554)- Completed initialization in 1 ms
+2025-03-08 12:27:20,579 INFO (AbstractOpenApiResource.java:390)- Init duration for springdoc-openapi is: 230 ms
+2025-03-08 12:27:24,010 DEBUG (HomeController.java:26)- books处理请求的线程：Thread[#64,http-nio-8088-exec-5,5,main]
+2025-03-08 12:27:24,080 INFO (HikariDataSource.java:109)- HikariPool-1 - Starting...
+2025-03-08 12:27:24,216 INFO (HikariPool.java:554)- HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5b4ef4dc
+2025-03-08 12:27:24,218 INFO (HikariDataSource.java:122)- HikariPool-1 - Start completed.
+2025-03-08 12:27:24,227 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: SELECT id,type,sort,book_id,create_time,update_time FROM home_book ORDER BY sort ASC
+2025-03-08 12:27:24,256 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: 
+2025-03-08 12:27:24,287 DEBUG (BaseJdbcLogger.java:135)- <==      Total: 31
+2025-03-08 12:27:24,297 DEBUG (BaseJdbcLogger.java:135)- ==>  Preparing: SELECT id,work_direction,category_id,category_name,pic_url,book_name,author_id,author_name,book_desc,score,book_status,visit_count,word_count,comment_count,last_chapter_id,last_chapter_name,last_chapter_update_time,is_vip,create_time,update_time FROM book_info WHERE (id IN (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?))
+2025-03-08 12:27:24,300 DEBUG (BaseJdbcLogger.java:135)- ==> Parameters: 1334318182169681920(Long), 1334318497132552192(Long), 1334318818323963904(Long), 1334328310788882432(Long), 1334334734843609088(Long), 1334335471568912384(Long), 1337759637059973121(Long), 1337759773395824640(Long), 1337762752513486849(Long), 1337872061003993088(Long), 1337872316667793408(Long), 1337872488235798528(Long), 1337872597996539904(Long), 1337872898115768320(Long), 1337873148071120896(Long), 1337874646456864768(Long), 1337874812798767104(Long), 1337874951365988352(Long), 1337875255574663168(Long), 1337876581629038592(Long), 1337879143543476224(Long), 1337879206630002688(Long), 1337882606201475072(Long), 1337884719262470144(Long), 1337949399824781312(Long), 1337957605418520576(Long), 1337958745514233856(Long), 1337960531323047936(Long), 1337961040297644032(Long), 1337968514828390400(Long), 1337971702436515840(Long)
+2025-03-08 12:27:24,312 DEBUG (BaseJdbcLogger.java:135)- <==      Total: 31
+2025-03-08 12:29:13,682 INFO (HikariDataSource.java:349)- HikariPool-1 - Shutdown initiated...
+2025-03-08 12:29:13,688 INFO (HikariDataSource.java:351)- HikariPool-1 - Shutdown completed.
