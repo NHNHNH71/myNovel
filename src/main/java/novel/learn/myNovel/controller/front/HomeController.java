@@ -1,10 +1,12 @@
 package novel.learn.myNovel.controller.front;
 
+import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import novel.learn.myNovel.core.common.resp.RestResp;
 import novel.learn.myNovel.dto.resp.HomeBookRespDto;
+import novel.learn.myNovel.dto.resp.HomeFriendLinkRespDto;
 import novel.learn.myNovel.service.HomeService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -25,6 +27,16 @@ public class HomeController {
         // 测试虚拟线程处理请求
         log.debug("books处理请求的线程：{}", Thread.currentThread());
         System.out.println("ssss");
+
         return homeService.listHomeBooks();
+    }
+    /**
+     * 首页友情链接列表查询接口
+     */
+    @Operation(summary = "首页友情链接列表查询接口")
+    @GetMapping("friend_Link/list")
+    public RestResp<List<HomeFriendLinkRespDto>> listHomeFriendLinks() {
+        log.debug("friend_link处理请求的线程：{}", Thread.currentThread());
+        return homeService.listHomeFriendLinks();
     }
 }

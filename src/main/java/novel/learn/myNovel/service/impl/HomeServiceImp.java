@@ -13,7 +13,7 @@ import java.util.List;
 
 @Service
 @RequiredArgsConstructor
-public class HomeServiceImpl implements HomeService {
+public class HomeServiceImp implements HomeService {
     private final HomeBookCacheManager homeBookCacheManager;
 
     private final FriendLinkCacheManager friendLinkCacheManager;

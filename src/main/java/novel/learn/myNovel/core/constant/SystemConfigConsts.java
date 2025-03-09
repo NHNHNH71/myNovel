@@ -31,7 +31,11 @@ public class SystemConfigConsts {
      * 图片上传目录
      */
     public static final String IMAGE_UPLOAD_DIRECTORY = "/image/";
-
+    /**
+     * 静态资源目录
+     * */
+    public static final String STATIC_RESOURCE = "/localPic/";
+    public static final String STATIC_RESOURCE_IMAGES = "/images/";
     /**
      * 常量类实例化异常信息
      */
